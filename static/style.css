@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://plus.unsplash.com/premium_photo-1677094310919-d0361465d3be?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Use the uploaded image as background */
+    background-size: cover; /* Ensure the image covers the entire body */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.2); /* Slightly transparent white for glassmorphism effect */
+    backdrop-filter: blur(10px); /* Apply blur for glass effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Softer shadow for better visibility */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.chat-header {
+    background-color: rgba(255, 255, 255, 0.8); /* Bright blue with slight transparency */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em; /* Larger font size for better readability */
+}
+
+.chat-box {
+    height: 400px;
+    padding: 20px;
+    overflow-y: auto;
+    font-size: 1em; /* Adjusted font size for readability */
+}
+
+.chat-input {
+    display: flex;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent white */
+    backdrop-filter: blur(10px); /* Apply blur for glass effect */
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1em; /* Adjusted font size */
+}
+
+.chat-input button {
+    padding: 12px 24px;
+    background-color: rgba(255, 255, 255, 0.2) ; /* Match header color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em; /* Adjusted font size */
+}
+
+.chat-input button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.chat-message {
+    margin-bottom: 15px;
+}
+
+.user-message {
+    text-align: right;
+    color: #007bff; /* Color to match the header */
+}
+
+.bot-message {
+    text-align: left;
+    color: #333; /* Darker color for better readability */
+}
